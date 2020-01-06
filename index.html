@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="myStyle.css">
+  <script src="myscript.js"></script>
+</head>
+
+
+<body>
+  <div class="header">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <h1 class="name">Pomodoro Clock</h1>
+    <div class="line3"></div>
+    <div class="line4"></div>
+
+  </div>
+
+
+  <div class="Time-Container">
+    <div class="break">
+      <h3>Break Length</h3>
+    </div>
+    <div class="operator"><button class="bType1" onclick="minusBreak()">-</button></div>
+    <div class="sCircle" id="break-result">5</div>
+    <div class="operator"><button class="bType1" onclick="addBreak()">+</button></div>
+  </div>
+
+  <div class="Time-Container">
+    <div class="session">
+      <h3>Session Length</h3>
+    </div>
+    <div class="operator"><button class="bType1" onclick="minusSession()">-</button></div>
+    <div class="sCircle" id="session-result">25</div>
+    <div class="operator"><button class="bType1" onclick="addSession()">+</button></div>
+  </div>
+
+
+  <div class="Session">
+
+    <div class="bCircle">
+      <h3 id="title">Session Time</h3>
+      <div id="timer">25:00</div>
+    </div>
+    <div class="action-Buttons">
+      <div class="bType2"><button id="startButton" onclick="Countdown()">►</button> </div>
+      <div class="bType2"><button id="pauseButton">❚❚</button> </div>
+      <div class="bType2"><button onclick="resetTimer()">&#8635;</button> </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">Designed & Coded By <u>Kubilay Balci</u></footer>
+
+</body>
+
+</html>

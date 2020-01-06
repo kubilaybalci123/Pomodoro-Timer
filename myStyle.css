@@ -1,0 +1,99 @@
+body {
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  background-color: #1E90FF;
+  color: white;
+  filter: brightness(90%);
+}
+
+.Time-Container {
+  display: inline-block;
+  margin: 20px;
+}
+
+.operator, .bType2 {
+  display: inline-block;
+  margin: 10px;
+}
+
+.sCircle {
+  color: black;
+  background: white;
+  border: solid 3px white;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.bCircle {
+  border: solid 8px white;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.bType1 {
+  width: 25px;
+  height: 25px;
+}
+
+.bType2 {
+  text-align: center;
+}
+
+#timer {
+  font-size: 50px;
+}
+
+button {
+  color: white;
+  background: #1E90FF;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.line1 {
+  border: 1px solid white;
+  grid-area: side1;
+}
+
+.line2 {
+  border: 1px solid white;
+  grid-area: side2;
+}
+
+.line3 {
+  border: 1px solid white;
+  grid-area: side3;
+}
+
+.line4 {
+  border: 1px solid white;
+  grid-area: side4;
+}
+
+.name {
+  grid-area: main;
+}
+
+.header {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-areas: "side1  main main  side3"
+    "side2  main main  side4";
+  grid-template-columns: 140px 110px 110px 140px;
+  grid-template-rows: 7px 7px 7px;
+}
+
+.footer {
+  margin: 50px;
+  opacity: 0.6;
+}
